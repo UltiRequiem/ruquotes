@@ -1,0 +1,12 @@
+[package]
+name = "ruquotes"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.11.0", features = ["json"] }
+serde = "1.0.119"
+serde_json = "1.0.61"
+serde_derive = "1.0.119"
+colored = "2"
+tokio = { version = "1.0.2", features = ["full"] }
