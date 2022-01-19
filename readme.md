@@ -10,6 +10,8 @@ with colors.
 The project also counts with a [ci](./.github/workflows/ci.yaml) and
 [release](./.github/workflows/release.yaml) system.
 
+![screenshot](./screenshot.png)
+
 ## Installation
 
 With `cargo`:
