@@ -1,6 +1,4 @@
 use colored::Colorize;
-use reqwest;
-use serde_derive;
 
 #[derive(serde_derive::Deserialize)]
 struct Quote {
