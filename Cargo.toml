@@ -2,6 +2,10 @@
 name = "ruquotes"
 version = "0.1.0"
 description = "A simple command line tool to get random quotes."
+license = "MIT"
+homepage = "https://github.com/UltiRequiem/ruquotes"
+repository = "https://github.com/UltiRequiem/ruquotes"
+license-file = "license"
 edition = "2021"
 
 [dependencies]
