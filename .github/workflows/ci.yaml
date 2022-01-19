@@ -15,7 +15,7 @@ jobs:
           override: true
           components: clippy
 
-      - name: Run cargo check
+      - name: Run clippy
         uses: actions-rs/cargo@v1
         with:
           command: clippy
