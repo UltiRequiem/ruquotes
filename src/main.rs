@@ -6,9 +6,11 @@ struct Quote {
     author: String,
 }
 
+const API_URL: &str = "https://api.quotable.io/random";
+
 #[tokio::main]
 async fn main() -> Result<(), reqwest::Error> {
-    let response = reqwest::get("https://api.quotable.io/random").await?;
+    let response = reqwest::get(API_URL).await?;
 
     let quote: Quote = response.json().await?;
 
