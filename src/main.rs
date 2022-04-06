@@ -1,20 +1,20 @@
 use colored::Colorize;
-
-#[derive(serde_derive::Deserialize)]
-struct Quote {
-    content: String,
-    author: String,
-}
-
-const API_URL: &str = "https://api.quotable.io/random";
+use ruquotes::quote;
+use std::process::exit;
 
 #[tokio::main]
-async fn main() -> Result<(), reqwest::Error> {
-    let response = reqwest::get(API_URL).await?;
+async fn main() {
+    let custom_quote = match quote().await {
+        Ok(quote) => quote,
+        Err(e) => {
+            eprintln!("{}", e);
+            exit(1);
+        }
+    };
 
-    let quote: Quote = response.json().await?;
-
-    println!("{} \n - {}", quote.content.green(), quote.author.cyan());
-
-    Ok(())
+    println!(
+        "{} \n - {}",
+        custom_quote.content.green(),
+        custom_quote.author.cyan()
+    );
 }
