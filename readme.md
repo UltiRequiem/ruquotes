@@ -1,7 +1,7 @@
 # Ruquotes
 
-[![Documentation](https://docs.rs/ruquotes/badge.svg)](https://docs.rs/fibora)
-[![Code Coverage](https://codecov.io/gh/UltiRequiem/ruquotes/branch/main/graph/badge.svg?token=M09A42VRUL)](https://codecov.io/gh/UltiRequiem/fibora)
+[![Documentation](https://docs.rs/ruquotes/badge.svg)](https://docs.rs/ruquotes)
+[![Code Coverage](https://codecov.io/gh/UltiRequiem/ruquotes/branch/main/graph/badge.svg)](https://codecov.io/gh/UltiRequiem/ruquotes)
 
 API Wrapper and CLI tool for [Quotable](https://github.com/lukePeavey/quotable)
 📣
