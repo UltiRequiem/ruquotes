@@ -73,8 +73,9 @@ the [tags](https://github.com/UltiRequiem/ruquotes/tags) 🏷️
 ## Other Art
 
 I also made this on [JavaScript](https://github.com/UltiRequiem/ranmess),
-[Python](https://github.com/UltiRequiem/quoteran),[A website](https://github.com/UltiRequiem/ulti-random-quotes),
-and [Go](https://github.com/UltiRequiem/quotable).
+[Python](https://github.com/UltiRequiem/quoteran),
+[a website](https://github.com/UltiRequiem/ulti-random-quotes), and
+[Go](https://github.com/UltiRequiem/quotable).
 
 ## Licence
 
