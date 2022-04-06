@@ -1,6 +1,10 @@
 # Ruquotes
 
-API Wrapper and CLI tool for [Quotable](https://github.com/lukePeavey/quotable).
+[![Documentation](https://docs.rs/ruquotes/badge.svg)](https://docs.rs/fibora)
+[![Code Coverage](https://codecov.io/gh/UltiRequiem/ruquotes/branch/main/graph/badge.svg?token=M09A42VRUL)](https://codecov.io/gh/UltiRequiem/fibora)
+
+API Wrapper and CLI tool for [Quotable](https://github.com/lukePeavey/quotable)
+📣
 
 ## Installation
 
@@ -36,6 +40,8 @@ Or use a binary from
 ```sh
 quotable
 ```
+
+[Video Showcase](https://youtu.be/IXKOg6IxP3Y) 📹
 
 ## Standing on the shoulders of giants
 
