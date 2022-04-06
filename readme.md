@@ -41,7 +41,7 @@ Or use a binary from
 quotable
 ```
 
-[Video Showcase](https://youtu.be/IXKOg6IxP3Y) 📹
+[Video Showcase](https://youtu.be/NsyMt8wLh6I) 📹
 
 ## Standing on the shoulders of giants
 
