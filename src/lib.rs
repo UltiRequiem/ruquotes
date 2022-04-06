@@ -26,3 +26,19 @@ pub async fn quote() -> Result<Quote, Error> {
 
     Ok(quote)
 }
+
+#[cfg(test)]
+mod tests {
+    use std::any::type_name;
+
+    fn type_of<T>(_: T) -> &'static str {
+        type_name::<T>()
+    }
+
+    #[tokio::test]
+    async fn quote() {
+        let data = super::quote().await.unwrap();
+
+        assert_eq!("u64", type_of(data.length));
+    }
+}
