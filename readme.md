@@ -17,13 +17,9 @@ cargo install ruquotes
 ```rust
 use ruquotes::quote;
 
-let custom_quote = quote().await?;
+let quote = quote().await?;
 
-println!(
-    "{} \n - {}",
-    custom_quote.content.green(),
-    custom_quote.author.cyan()
-);
+println!("{} \n - {}", quote.content, quote.author);
 ```
 
 ## CLI
