@@ -6,6 +6,10 @@
 API Wrapper and CLI tool for [Quotable](https://github.com/lukePeavey/quotable)
 📣
 
+[Live coding](https://youtu.be/so32pJcTFEo) 👇
+
+[![Video Thumbnail](./youtube.png)](https://youtu.be/so32pJcTFEo)
+
 ## Installation
 
 ```sh
@@ -52,7 +56,7 @@ quotable
 
 - ⚡ [reqwest](https://github.com/seanmonstar/reqwest): An easy and powerful Rust
   HTTP Client
-  
+
 ## Support
 
 Open an Issue, I will check it a soon as possible 👀
