@@ -10,6 +10,17 @@ API Wrapper and CLI tool for [Quotable](https://github.com/lukePeavey/quotable)
 
 [![Video Thumbnail](./youtube.png)](https://youtu.be/so32pJcTFEo)
 
+## Use your own API server
+
+The public `api.quotable.io` host is no longer available, so point ruquotes at a Quotable server you run (the
+project is open source). The base URL is read, in this order, from:
+
+1. the `--api-url` flag (or the argument of `quote_from`),
+2. the `QUOTABLE_API_URL` environment variable,
+3. the public default, `https://api.quotable.io`.
+
+Give the server address only, without `/random` (a path prefix such as `https://example.com/quotes-api` is fine).
+
 ## Installation
 
 ```sh
@@ -19,9 +30,13 @@ cargo install ruquotes
 ## Usage
 
 ```rust
-use ruquotes::quote;
+use ruquotes::{quote, quote_from};
 
+// the server from QUOTABLE_API_URL (or the default)
 let quote = quote().await?;
+
+// or a specific one
+let quote = quote_from(Some("https://quotes.example.com")).await?;
 
 println!("{} \n - {}", quote.content, quote.author);
 ```
@@ -38,7 +53,8 @@ Or use a binary from
 ### Usage
 
 ```sh
-quotable
+QUOTABLE_API_URL=https://quotes.example.com ruquotes
+ruquotes --times 3 --api-url https://quotes.example.com
 ```
 
 [Video Showcase](https://youtu.be/NsyMt8wLh6I) 📹
