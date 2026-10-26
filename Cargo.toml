@@ -9,7 +9,7 @@ repository = "https://github.com/UltiRequiem/ruquotes"
 edition = "2021"
 
 [dependencies]
-reqwest = { version = "0.11.0", features = ["json"] }
+reqwest = { version = "0.12.4", features = ["json"] }
 futures = "0.3"
 serde = "1.0.119"
 serde_json = "1.0.61"
