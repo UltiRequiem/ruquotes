@@ -15,5 +15,5 @@ serde = "1.0.119"
 serde_json = "1.0.61"
 clap = { version = "3.1.8", features = ["derive"] }
 serde_derive = "1.0.119"
-colored = "2"
+colored = "3"
 tokio = { version = "1.0.2", features = ["full"] }
