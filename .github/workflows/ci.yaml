@@ -1,16 +1,27 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
 
 jobs:
-  check:
-    name: Rust project
+  ci:
+    name: CI
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      # stable is enough for clippy and rustfmt; nightly broke old locked dependencies (proc-macro2)
-      - name: Install Rust
-        run: rustup toolchain install stable --profile minimal --component clippy,rustfmt --no-self-update && rustup default stable
-      - run: cargo clippy --all-targets
-      - run: cargo fmt --all -- --check
-      - run: cargo test
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+      - uses: Swatinem/rust-cache@v2
+      - run: cargo fmt --all --check
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+      - run: cargo build --workspace
+      - run: cargo test --workspace
